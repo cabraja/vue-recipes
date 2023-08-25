@@ -9,6 +9,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Category from './pages/Category'
+import Meal from './pages/Meal'
 import './assets/tailwind.css'
 
 Vue.config.productionTip = false
@@ -21,7 +22,8 @@ const routes = [
   {path: '/', component: Home},
   {path: '/login', component: Login},
   {path:'/register', component: Register},
-  {path:'/category/:categoryName', component: Category}
+  {path:'/category/:categoryName', component: Category},
+  {path:'/meal/:id', component: Meal}
 ]
 
 Vue.component('ValidationProvider', ValidationProvider);

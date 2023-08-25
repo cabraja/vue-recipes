@@ -17,7 +17,7 @@ export default{
         Categories
     },
     beforeCreate(){
-        if(checkIfLogged()){
+        if(!checkIfLogged()){
             this.$router.push('/login');
         }
     }

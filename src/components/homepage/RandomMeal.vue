@@ -8,7 +8,7 @@
                 <img :src="meal.strMealThumb" :alt="meal.strMeal" class="object-cover h-full w-full hover:scale-110 transition">
             </div>
 
-            <div class="flex flex-col mt-2">
+            <div class="flex flex-col mt-2" >
                 <h3 class="font-bold text-2xl mb-2">{{meal.strMeal}}</h3>
                 <div>
                     <p class="text-neutral-700"><span class="font-semibold text-neutral-900">Category</span>: {{meal.strCategory}}</p>
@@ -44,7 +44,7 @@ export default {
         })
         .catch(() => this.errorMsg = 'Error occured, try later')
         .finally(() => this.loading = false)
-    }
+    },
 
 }
 </script>
