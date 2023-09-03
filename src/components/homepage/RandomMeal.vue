@@ -3,7 +3,11 @@
         <spinner v-if="loading"></spinner>
         <p v-if="errorMsg" class="text-center mt-[10%]">{{errorMsg}}</p>
 
-        <div v-if="meal" class="w-full bg-white rounded-xl shadow-lg p-5">
+        <div v-if="meal" class="w-full bg-white rounded-xl shadow-lg p-5 relative">
+            <div class="absolute -top-2 -left-2 bg-violet-400 rounded-full shadow z-50 text-white py-2 px-3 text-sm">
+                Meal of the day
+            </div>
+
             <div class="w-full overflow-hidden rounded-xl">
                 <img :src="meal.strMealThumb" :alt="meal.strMeal" class="object-cover h-full w-full hover:scale-110 transition">
             </div>

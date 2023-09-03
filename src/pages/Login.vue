@@ -55,6 +55,7 @@ export default {
                     if(user.length > 0){
                         const userObj = {username: user.username, email:user.email, password:user.password, isAdmin:user.isAdmin};
                         localStorage.setItem('user', userObj);
+                        this.$store.commit('showNav');
                         this.$router.push('/');
                     }
                     else{

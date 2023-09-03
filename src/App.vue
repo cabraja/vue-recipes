@@ -3,7 +3,7 @@
       <navbar></navbar>
 
       <div class="p-5 mx-auto md:max-w-[1100px]">
-      <router-view></router-view>
+      <router-view :key="$route.fullPath"></router-view>
       </div>
   </div>
 </template>
